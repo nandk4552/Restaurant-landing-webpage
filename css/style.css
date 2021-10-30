@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #f44336;
+}
+
+* {
+    margin: 0;padding: 0;
+    outline: none;border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center;    
+    text-align: center;
+    position: relative;
+}
+nav {
+    width: 85%;
+    margin: auto;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1 span{
+    background: var(--main-color);
+    border-radius: .5rem;
+    padding: 1px 5px;
+    color: #fff;
+}
+nav h1 span:hover {
+    color: var(--main-color);
+    background: #fff;
+}
+.logo {
+    font-size: 50px;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+}
+#menu {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--main-color);
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#menu:hover {
+    background: #fff;
+    color: var(--main-color);
+}
+
+.txt-box{
+    width: 60%;
+    margin: 200px auto 0;
+    color: #fff;
+}
+.txt-box h1{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.txt-box p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.txt-box button {
+    width: 220px;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid #fff;
+    background: transparent;
+    font-weight: 600;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.txt-box button:hover {
+    background: #fff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    color: var(--main-color);
+}
+
+/* sideBar */
+
+.sideBar {
+    height: 335px;
+    width: 60px;
+    background: #fff;
+    border-radius: .5rem;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+/* icon-box */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px auto;
+}
+.icon-box:hover .icon {
+    background: var(--main-color);
+}
+.icon-box:hover .icon i{
+    color: #fff;
+
+}
+.icon-box:hover .side-text {
+    min-width: 140px;
+}
+
+
+
+.side-text {
+    min-width: 0px;
+    height: 100%;
+    background: #f44336;
+    margin-right: 5px;
+    line-height: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    transition: .5s; 
+}
+.icon {
+    min-width: 50px;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icon i {
+    font-size: 20px;
+    color: #f44336;
+    line-height: 50px;
+}
